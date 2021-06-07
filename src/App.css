@@ -28,6 +28,61 @@
   color: #61dafb;
 }
 
+.beer-box {
+  width: 350px;
+  max-width: 90%;
+  padding: 3rem 2rem 1rem;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  background: linear-gradient(0deg, rgba(242, 185, 30, 1) 43%, rgba(245, 227, 170, 1) 100%);
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.beer-box::before {
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15%;
+  background-color: #f5f1e7;
+  position: absolute;
+}
+
+.beer-box h1 {
+  color: #000;
+  text-shadow: 2px 2px 1px #fff;
+}
+
+.beer-box h3 {
+  font-size: 1.5rem;
+}
+
+.beer-box p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.button-area {
+  width: 330px;
+  max-width: 90%;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-click {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0px 3px 0px #f2b91e;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
